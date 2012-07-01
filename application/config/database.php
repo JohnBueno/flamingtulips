@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['hostname'] = 'mysql.gavin.dreamhosters.com';
+$db['default']['username'] = 'mysql_guy';
+$db['default']['password'] = 'organbluesfucksyoursister';
+$db['default']['database'] = 'bakedtulips';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
