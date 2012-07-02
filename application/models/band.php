@@ -1,5 +1,5 @@
 <?php 
-class ShowReview_model extends CI_Model {
+class Band extends CI_Model {
 
     function __construct()
     {

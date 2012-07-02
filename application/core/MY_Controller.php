@@ -32,7 +32,7 @@ class MY_Controller extends CI_Controller{
 	}
 	 
 	
-	protected function _render($view) {
+	protected function _render($view, $viewData=null) {
 		//static
 		$toTpl["javascript"] = $this->javascript;
 		$toTpl["css"] = $this->css;
@@ -43,6 +43,13 @@ class MY_Controller extends CI_Controller{
 		$toTpl["description"] = $this->description;
 		$toTpl["keywords"] = $this->keywords;
 		$toTpl["author"] = $this->author;
+		
+		
+		// add data from the rendered view
+		if($viewData)
+		{
+			$this->data = array_merge($this->data, $viewData);
+		}
 		
 		//data
 		$toBody["content_body"] = $this->load->view($view,array_merge($this->data,$toTpl),true);

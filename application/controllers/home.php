@@ -9,7 +9,7 @@ class Home extends MY_Controller {
 		 */
 		$this->title = "Yaaaaa";
 		$this->keywords = "arny, arnodo";
-		
+		$this->javascript = array('venue_grabber.js');
 		$this->_render('pages/home');
 	}
 	
