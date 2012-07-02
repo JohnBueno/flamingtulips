@@ -5,12 +5,16 @@ $(document).ready(function(){
 	
 	function getLocalVenues(lat, lon){
 		$.ajax({
-			url: "https://api.foursquare.com/v2/venues/search?ll="+lat+","+lon+"&categoryId=4bf58dd8d48988d1e5931735 &client_id=SW42LYFQ2CPI4R5OFP1R2CVO1DOGDHGK5QV52EOB2O3WRWUO&client_secret=KF4UIOQTZ00R0ZOI4IEV24LFSEBZNUU4DCSHHG1OWIPYFNKD&v=20120627",
+			url: _baseUrl+"venues/get_local/",
+			data: {'lat':lat, 'lon':lon},
+			type: 'POST',
+			dataType:'JSON',
 			success: function(data){
-				//console.log(data.response.venues);
+			console.log( data);
+				var data = jQuery.parseJSON(data);
 				for(var i = 0; i < data.response.venues.length; i++){
 					var venue = data.response.venues[i];
-					console.log(venue);
+					//console.log(venue);
 					$('#venue_table tr:last').after('<tr><td><a href=shows/by_venue/'+venue.id+' >'+venue.name+'</a></td></tr>');
 				}
 			},

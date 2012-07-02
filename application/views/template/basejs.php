@@ -1,4 +1,5 @@
 <script>
+var _baseUrl = "<?php echo base_url(); ?>";
 var ARNY = (function(){
 	var _baseUrl = "<?php echo base_url(); ?>";
 	return{
