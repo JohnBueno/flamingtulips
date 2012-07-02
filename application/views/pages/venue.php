@@ -19,4 +19,50 @@
 		 ?>
 		</ul>
 	</div>
+
+	<div class="modal hide" id="myModal">
+		<form id="addshow" class="form-horizontal">
+			<fieldset>
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">x</button>
+					<h3>Add A Show</h3>
+				</div>
+				<div class="modal-body">
+				
+				    <div class="control-group">
+				      	<label class="control-label" for="band_id">Band</label>
+				    	<div class="controls">		        
+					     	<select id="band_id" name="band_id">
+					     		<? foreach($bands as $band): ?>
+					     			<option value="<?=$band->id; ?>"><?=$band->band_name; ?></option>
+								<? endforeach; ?>
+					     	</select>
+				     	</div>
+				    </div>
+				    
+				    <div class="control-group">
+				      	<label class="control-label" for="venu_id">Venue ID</label>
+				    	<div class="controls">		        
+					     	<select id="venue_id" name="venue_id">
+					     		<option value="1">1</option>
+					     		<option value="2">2</option>
+					     		<option value="3">3</option>
+					     	</select>
+				     	</div>
+				    </div>
+				    
+				    <div class="control-group">
+				      	<label class="control-label" for="input01">Date</label>
+				    	<div class="controls">		        
+					     	<input type="date" name="date">
+				     	</div>
+				    </div>
+				</div>
+			</fieldset>
+				<div class="modal-footer">
+					<a href="#" class="btn" data-dismiss="modal">Close</a>
+					<input type="submit" class="btn btn-primary" value="Add">
+				</div>
+		</form>
+	</div>
 </div>

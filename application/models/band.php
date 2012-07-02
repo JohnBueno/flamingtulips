@@ -5,5 +5,11 @@ class Band extends CI_Model {
     {
         parent::__construct();
     }
+    
+	function get_band_ids()
+    {
+    	$bands = $this->db->get('bands');
+    	return $bands->result();
+    }
 }
 ?>

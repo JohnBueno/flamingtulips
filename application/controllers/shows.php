@@ -3,13 +3,11 @@
 class Shows extends MY_Controller {
 	
 	public function index(){	
-		
 		/*
 		 *set up title and keywords (if not the default in custom.php config file will be set) 
 		 */
 		$this->title = "Yaaaaa";
 		$this->keywords = "arny, arnodo";
-		
 		$this->_render('pages/home');
 	}
 	
@@ -17,12 +15,19 @@ class Shows extends MY_Controller {
 	{
 		
 		$this->load->model('Show');
-		
 		$shows = $this->Show->get_by_venue_id($id);
-		
 		$data['shows'] = $shows;
 		
+		$this->load->model('Band');
+		$bands = $this->Band->get_band_ids();
+		$data['bands'] = $bands;
+		
+		
 		$this->_render('pages/venue', $data);
+		
+		
+		
+		
 	}
 	
 	public function add_show()
