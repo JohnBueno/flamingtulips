@@ -6,18 +6,28 @@
 	<div class="span12">
 	
 	<h3>Shows at This Venue</h3>
-		<ul>
+	<br> 
+	 <a data-toggle="modal" href="#myModal" class="btn btn-primary">Add Show</a>
+	
+		
 		<?php
 		if(count($shows) > 0){ 
+		?><ul>
+		<?  
 			foreach($shows as $show){
 				echo "<li>".date('l, F jS',strtotime($show->date))." | ".$show->band_name."</li>";
-			}
+			}?>
+		  </ul>
+			<?
 		} else {
-			echo "No shows are available at this time";
+			?>
+			<br><br>
+			<p>No shows are listed at this time - <a data-toggle="modal" href="#myModal">know something we don't?</a></p>
+			<? 
 		}
 			
 		 ?>
-		</ul>
+		
 	</div>
 
 	<div class="modal hide" id="myModal">
