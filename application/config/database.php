@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'mysql.gavin.dreamhosters.com';
+$db['default']['hostname'] = 'mysql.hellyes.gavinpotts.com';
 $db['default']['username'] = 'mysql_guy';
 $db['default']['password'] = 'organbluesfucksyoursister';
 $db['default']['database'] = 'tulipoperation';
