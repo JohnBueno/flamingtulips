@@ -40,16 +40,7 @@
 				     	</div>
 				    </div>
 				    
-				    <div class="control-group">
-				      	<label class="control-label" for="venu_id">Venue ID</label>
-				    	<div class="controls">		        
-					     	<select id="venue_id" name="venue_id">
-					     		<option value="1">1</option>
-					     		<option value="2">2</option>
-					     		<option value="3">3</option>
-					     	</select>
-				     	</div>
-				    </div>
+				    <input type="hidden" value="<?= $venue_id;?>" name="venue_id"/>
 				    
 				    <div class="control-group">
 				      	<label class="control-label" for="input01">Date</label>

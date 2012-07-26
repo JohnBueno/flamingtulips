@@ -21,7 +21,7 @@ class Shows extends MY_Controller {
 		$this->load->model('Band');
 		$bands = $this->Band->get_band_ids();
 		$data['bands'] = $bands;
-		
+		$data['venue_id'] = $id;
 		
 		$this->_render('pages/venue', $data);	
 		
