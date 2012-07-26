@@ -12,6 +12,7 @@ class Show extends CI_Model {
     	$this->db->select('*');
     	$this->db->from('shows');
     	$this->db->join('bands', 'bands.id = shows.band_id');
+    	$this->db->where('shows.venue_id', $id);
     	$show = $this->db->get();
     	
     	return $show->result();
@@ -19,7 +20,7 @@ class Show extends CI_Model {
     
     function get_all()
     {
-    
+      
     }
     
     function add($show)
