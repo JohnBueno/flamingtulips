@@ -44,6 +44,11 @@
 				    <div class="control-group">
 				      	<label class="control-label" for="band_id">Band</label>
 				    	<div class="controls">		        
+					     	
+					     	<input type="text" name="band_name" id="band_name">
+					     	
+					     	<br><br>
+					     	
 					     	<select id="band_id" name="band_id">
 					     		<? foreach($bands as $band): ?>
 					     			<option value="<?=$band->id; ?>"><?=$band->band_name; ?></option>

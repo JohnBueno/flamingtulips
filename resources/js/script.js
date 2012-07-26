@@ -14,4 +14,17 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	$('#band_name').keyup(function(event){
+		var query = $(this).attr('value');
+		if(query){
+			$.ajax({
+				type: "POST",
+				url: _baseUrl+"bands/bandquery/"+query,
+				success: function(data){
+					console.log(data);
+				}
+			});
+		}
+	});
+	
 });
