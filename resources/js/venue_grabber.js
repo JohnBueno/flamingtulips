@@ -27,6 +27,8 @@ $(document).ready(function(){
 	function geo_success(position) {
 		 usrLat = position.coords.latitude;
 		 usrLong = position.coords.longitude;
+		 usrLat = (usrLat).toFixed(2);
+		 usrLong = (usrLong).toFixed(2);
 		 getLocalVenues(usrLat, usrLong);
 		 //printLatLong(position.coords.latitude, position.coords.longitude);
 	}

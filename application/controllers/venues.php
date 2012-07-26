@@ -15,8 +15,8 @@ class Venues extends MY_Controller {
 		
 		$this->load->library('session');
 				
-		if ( ! $venues = $this->session->userdata('venues'))
-		{
+		//if ( ! $venues = $this->session->userdata('venues'))
+		//{
 		     
 		     $service_url = "https://api.foursquare.com/v2/venues/search?ll=".$lat.",".$lon."&categoryId=4bf58dd8d48988d1e5931735&client_id=SW42LYFQ2CPI4R5OFP1R2CVO1DOGDHGK5QV52EOB2O3WRWUO&client_secret=KF4UIOQTZ00R0ZOI4IEV24LFSEBZNUU4DCSHHG1OWIPYFNKD&v=20120627";
 		     $curl = curl_init();
@@ -29,11 +29,11 @@ class Venues extends MY_Controller {
 		     curl_close($curl);
 		     
 		     $venues = json_encode($curl_response);
-		     $this->session->set_userdata('venues', $venues);
+		     //$this->session->set_userdata('venues', $venues);
 			//$venues = 'test';
 		     // Save into the cache for 5 minutes
 		     //$this->cache->file->save('venues', $venues, 300);
-		}
+		//}
 		
 		echo $venues;
 		
