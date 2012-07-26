@@ -12,7 +12,9 @@
 		
 		<?php
 		if(count($shows) > 0){ 
-		?><ul>
+		?>
+		<br><br>
+		<ul>
 		<?  
 			foreach($shows as $show){
 				echo "<li>".date('l, F jS',strtotime($show->date))." | ".$show->band_name."</li>";

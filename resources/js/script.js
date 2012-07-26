@@ -4,7 +4,7 @@ $(document).ready(function(){
 			var request = $(this).serialize();
 			$.ajax({
 				type: "POST",
-				url: "http://localhost:8888/flamingtulips/shows/add_show",
+				url: _baseUrl+"shows/add_show",
 				data: request,
 				success: function(){
 					alert('success');
