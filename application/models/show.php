@@ -8,7 +8,12 @@ class Show extends CI_Model {
     
     function get_by_venue_id($id)
     {
-    	$show = $this->db->get_where('shows', array('venue_id' => $id));
+    	//$show = $this->db->get_where('shows', array('venue_id' => $id));
+    	$this->db->select('*');
+    	$this->db->from('shows');
+    	$this->db->join('bands', 'bands.id = shows.band_id');
+    	$show = $this->db->get();
+    	
     	return $show->result();
     }
     

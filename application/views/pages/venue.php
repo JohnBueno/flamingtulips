@@ -10,7 +10,7 @@
 		<?php
 		if(count($shows) > 0){ 
 			foreach($shows as $show){
-				echo "<li>".$show->date."</li>";
+				echo "<li>".date('l, F jS',strtotime($show->date))." | ".$show->band_name."</li>";
 			}
 		} else {
 			echo "No shows are available at this time";

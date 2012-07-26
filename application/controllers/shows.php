@@ -23,10 +23,7 @@ class Shows extends MY_Controller {
 		$data['bands'] = $bands;
 		
 		
-		$this->_render('pages/venue', $data);
-		
-		
-		
+		$this->_render('pages/venue', $data);	
 		
 	}
 	
