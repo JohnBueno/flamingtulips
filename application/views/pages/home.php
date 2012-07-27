@@ -6,7 +6,7 @@
 	<div class="span12">
 	<table id="venue_table" class="table table-bordered table-striped">
 		<tr>
-			<th>Band Name</th>
+			<th>Venue Name</th>
 		</tr>
 	</table>
 	</div>
