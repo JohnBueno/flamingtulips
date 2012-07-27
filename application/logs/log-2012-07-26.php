@@ -784,3 +784,157 @@ DEBUG - 2012-07-26 05:42:16 --> Model Class Initialized
 DEBUG - 2012-07-26 05:42:16 --> Model Class Initialized
 DEBUG - 2012-07-26 05:42:16 --> Final output sent to browser
 DEBUG - 2012-07-26 05:42:16 --> Total execution time: 0.3569
+DEBUG - 2012-07-26 18:00:17 --> Config Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Hooks Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 18:00:17 --> URI Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Router Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 18:00:17 --> Output Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Security Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Input Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 18:00:17 --> Language Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Loader Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 18:00:17 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 18:00:17 --> Database Driver Class Initialized
+ERROR - 2012-07-26 18:00:17 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'mysql_guy'@'c-68-82-226-67.hsd1.pa.comcast.net' (using password: YES) /Users/jmm6026/Sites/flamingtulips/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-07-26 18:00:17 --> Unable to connect to the database
+DEBUG - 2012-07-26 18:00:17 --> Controller Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 18:00:17 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 18:00:17 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 18:00:17 --> Final output sent to browser
+DEBUG - 2012-07-26 18:00:17 --> Total execution time: 0.4226
+DEBUG - 2012-07-26 18:00:17 --> Config Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Hooks Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 18:00:17 --> URI Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Router Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Output Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Security Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Input Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 18:00:17 --> Language Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Loader Class Initialized
+DEBUG - 2012-07-26 18:00:17 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 18:00:17 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 18:00:17 --> Database Driver Class Initialized
+ERROR - 2012-07-26 18:00:18 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'mysql_guy'@'c-68-82-226-67.hsd1.pa.comcast.net' (using password: YES) /Users/jmm6026/Sites/flamingtulips/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-07-26 18:00:18 --> Unable to connect to the database
+DEBUG - 2012-07-26 18:00:18 --> Controller Class Initialized
+DEBUG - 2012-07-26 18:00:18 --> Session Class Initialized
+DEBUG - 2012-07-26 18:00:18 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 18:00:18 --> A session cookie was not found.
+DEBUG - 2012-07-26 18:00:18 --> Session routines successfully run
+DEBUG - 2012-07-26 18:00:18 --> Final output sent to browser
+DEBUG - 2012-07-26 18:00:18 --> Total execution time: 1.2181
+DEBUG - 2012-07-26 18:00:32 --> Config Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Hooks Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 18:00:32 --> URI Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Router Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 18:00:32 --> Output Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Security Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Input Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 18:00:32 --> Language Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Loader Class Initialized
+DEBUG - 2012-07-26 18:00:32 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 18:00:32 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 18:00:32 --> Database Driver Class Initialized
+ERROR - 2012-07-26 18:00:33 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'mysql_guy'@'c-68-82-226-67.hsd1.pa.comcast.net' (using password: YES) /Users/jmm6026/Sites/flamingtulips/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-07-26 18:00:33 --> Unable to connect to the database
+DEBUG - 2012-07-26 18:00:33 --> Controller Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 18:00:33 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 18:00:33 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 18:00:33 --> Final output sent to browser
+DEBUG - 2012-07-26 18:00:33 --> Total execution time: 0.3359
+DEBUG - 2012-07-26 18:00:33 --> Config Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Hooks Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 18:00:33 --> URI Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Router Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Output Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Security Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Input Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 18:00:33 --> Language Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Loader Class Initialized
+DEBUG - 2012-07-26 18:00:33 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 18:00:33 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 18:00:33 --> Database Driver Class Initialized
+ERROR - 2012-07-26 18:00:35 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'mysql_guy'@'c-68-82-226-67.hsd1.pa.comcast.net' (using password: YES) /Users/jmm6026/Sites/flamingtulips/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-07-26 18:00:35 --> Unable to connect to the database
+DEBUG - 2012-07-26 18:00:35 --> Controller Class Initialized
+DEBUG - 2012-07-26 18:00:35 --> Session Class Initialized
+DEBUG - 2012-07-26 18:00:35 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 18:00:35 --> Session routines successfully run
+DEBUG - 2012-07-26 18:00:36 --> Final output sent to browser
+DEBUG - 2012-07-26 18:00:36 --> Total execution time: 2.6844
+DEBUG - 2012-07-26 20:33:48 --> Config Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:33:48 --> URI Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Router Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:33:48 --> Output Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Security Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Input Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:33:48 --> Language Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:33:48 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:33:48 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:33:48 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:33:49 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:33:49 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:33:49 --> Final output sent to browser
+DEBUG - 2012-07-26 20:33:49 --> Total execution time: 0.7497
+DEBUG - 2012-07-26 20:33:49 --> Config Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:33:49 --> URI Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Router Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Output Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Security Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Input Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:33:49 --> Language Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:33:49 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:33:49 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Session Class Initialized
+DEBUG - 2012-07-26 20:33:49 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:33:49 --> A session cookie was not found.
+DEBUG - 2012-07-26 20:33:49 --> Session routines successfully run
+DEBUG - 2012-07-26 20:33:50 --> Final output sent to browser
+DEBUG - 2012-07-26 20:33:50 --> Total execution time: 0.5410
