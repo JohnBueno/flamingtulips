@@ -938,3 +938,293 @@ DEBUG - 2012-07-26 20:33:49 --> A session cookie was not found.
 DEBUG - 2012-07-26 20:33:49 --> Session routines successfully run
 DEBUG - 2012-07-26 20:33:50 --> Final output sent to browser
 DEBUG - 2012-07-26 20:33:50 --> Total execution time: 0.5410
+DEBUG - 2012-07-26 20:40:46 --> Config Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:40:46 --> URI Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Router Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:40:46 --> Output Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Security Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Input Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:40:46 --> Language Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:40:46 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:40:46 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:40:46 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:40:46 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:40:46 --> Final output sent to browser
+DEBUG - 2012-07-26 20:40:46 --> Total execution time: 0.5108
+DEBUG - 2012-07-26 20:40:47 --> Config Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:40:47 --> URI Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Router Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Output Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Security Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Input Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:40:47 --> Language Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:40:47 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:40:47 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Session Class Initialized
+DEBUG - 2012-07-26 20:40:47 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:40:47 --> Session routines successfully run
+DEBUG - 2012-07-26 20:40:48 --> Final output sent to browser
+DEBUG - 2012-07-26 20:40:48 --> Total execution time: 1.5786
+DEBUG - 2012-07-26 20:41:55 --> Config Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:41:55 --> URI Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Router Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:41:55 --> Output Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Security Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Input Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:41:55 --> Language Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:41:55 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:41:55 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:41:55 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:41:55 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:41:55 --> Final output sent to browser
+DEBUG - 2012-07-26 20:41:55 --> Total execution time: 0.4842
+DEBUG - 2012-07-26 20:42:11 --> Config Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:42:11 --> URI Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Router Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Output Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Security Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Input Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:42:11 --> Language Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:42:11 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:42:11 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:42:11 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:42:12 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:42:12 --> Session Class Initialized
+DEBUG - 2012-07-26 20:42:12 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:42:12 --> A session cookie was not found.
+DEBUG - 2012-07-26 20:42:12 --> Session routines successfully run
+DEBUG - 2012-07-26 20:42:13 --> Final output sent to browser
+DEBUG - 2012-07-26 20:42:13 --> Total execution time: 1.9693
+DEBUG - 2012-07-26 20:45:16 --> Config Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:45:16 --> URI Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Router Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:45:16 --> Output Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Security Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Input Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:45:16 --> Language Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:45:16 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:45:16 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:45:16 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:45:16 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:45:16 --> Final output sent to browser
+DEBUG - 2012-07-26 20:45:16 --> Total execution time: 0.5602
+DEBUG - 2012-07-26 20:45:16 --> Config Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:45:16 --> URI Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Router Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Output Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Security Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Input Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:45:16 --> Language Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:45:16 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:45:16 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:45:16 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:45:17 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:45:17 --> Session Class Initialized
+DEBUG - 2012-07-26 20:45:17 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:45:17 --> Session routines successfully run
+DEBUG - 2012-07-26 20:45:18 --> Final output sent to browser
+DEBUG - 2012-07-26 20:45:18 --> Total execution time: 1.6175
+DEBUG - 2012-07-26 20:45:21 --> Config Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:45:21 --> URI Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Router Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:45:21 --> Output Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Security Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Input Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:45:21 --> Language Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:45:21 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:45:21 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:45:21 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:45:21 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:45:21 --> Final output sent to browser
+DEBUG - 2012-07-26 20:45:21 --> Total execution time: 0.3006
+DEBUG - 2012-07-26 20:45:21 --> Config Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:45:21 --> URI Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Router Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Output Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Security Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Input Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:45:21 --> Language Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:45:21 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:45:21 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:45:21 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:45:22 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:45:22 --> Session Class Initialized
+DEBUG - 2012-07-26 20:45:22 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:45:22 --> Session routines successfully run
+DEBUG - 2012-07-26 20:45:22 --> Final output sent to browser
+DEBUG - 2012-07-26 20:45:22 --> Total execution time: 0.4864
+DEBUG - 2012-07-26 20:52:14 --> Config Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:52:14 --> URI Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Router Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:52:14 --> Output Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Security Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Input Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:52:14 --> Language Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:52:14 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:52:14 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:52:14 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:52:15 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:52:15 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:52:15 --> Final output sent to browser
+DEBUG - 2012-07-26 20:52:15 --> Total execution time: 0.5404
+DEBUG - 2012-07-26 20:52:15 --> Config Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:52:15 --> URI Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Router Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Output Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Security Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Input Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:52:15 --> Language Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:52:15 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:52:15 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:52:15 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:52:16 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:52:16 --> Session Class Initialized
+DEBUG - 2012-07-26 20:52:16 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:52:16 --> Session routines successfully run
+DEBUG - 2012-07-26 20:52:16 --> Final output sent to browser
+DEBUG - 2012-07-26 20:52:16 --> Total execution time: 1.2032
+DEBUG - 2012-07-26 20:52:41 --> Config Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:52:41 --> URI Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Router Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> No URI present. Default controller set.
+DEBUG - 2012-07-26 20:52:41 --> Output Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Security Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Input Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:52:41 --> Language Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:52:41 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:52:41 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:52:41 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:52:42 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/pages/home.php
+DEBUG - 2012-07-26 20:52:42 --> Helper loaded: nav_helper
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/template/nav.php
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/template/basejs.php
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/template/header.php
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/template/footer.php
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/template/main.php
+DEBUG - 2012-07-26 20:52:42 --> File loaded: application/views/template/skeleton.php
+DEBUG - 2012-07-26 20:52:42 --> Final output sent to browser
+DEBUG - 2012-07-26 20:52:42 --> Total execution time: 0.3025
+DEBUG - 2012-07-26 20:52:49 --> Config Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Hooks Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Utf8 Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> UTF-8 Support Enabled
+DEBUG - 2012-07-26 20:52:49 --> URI Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Router Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Output Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Security Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Input Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-07-26 20:52:49 --> Language Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Loader Class Initialized
+DEBUG - 2012-07-26 20:52:49 --> Config file loaded: application/config/development/custom.php
+DEBUG - 2012-07-26 20:52:49 --> Helper loaded: url_helper
+DEBUG - 2012-07-26 20:52:49 --> Database Driver Class Initialized
+DEBUG - 2012-07-26 20:52:50 --> Controller Class Initialized
+DEBUG - 2012-07-26 20:52:50 --> Session Class Initialized
+DEBUG - 2012-07-26 20:52:50 --> Helper loaded: string_helper
+DEBUG - 2012-07-26 20:52:50 --> A session cookie was not found.
+DEBUG - 2012-07-26 20:52:50 --> Session routines successfully run
+DEBUG - 2012-07-26 20:52:50 --> Final output sent to browser
+DEBUG - 2012-07-26 20:52:50 --> Total execution time: 0.4019
