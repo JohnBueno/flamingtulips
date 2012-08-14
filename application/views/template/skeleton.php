@@ -17,6 +17,7 @@
 
 <link rel="stylesheet" href="<?php echo base_url(CSS."style.css");?>">
 <link rel="stylesheet" href="<?php echo base_url(CSS."global.css");?>">
+<link rel="stylesheet" href="<?php echo base_url(CSS."override.css");?>">
 
 <!-- extra CSS-->
 <?php foreach($css as $c):?>
@@ -44,6 +45,7 @@
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php echo base_url(JS."libs/jquery-1.7.2.min.js");?>"><\/script>')</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js">
+	<script src="<?php echo base_url(JS."libs/jquery-ui-1.8.22.custom.min.js");?>"></script>
 	<script src="<?php echo base_url(JS."libs/underscore-1.3.1.min.js");?>"></script>
 	<script src="<?php echo base_url(JS."plugins.js");?>"></script>
 	<script src="<?php echo base_url(JS."script.js");?>"></script>

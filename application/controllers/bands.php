@@ -14,13 +14,23 @@ class Bands extends MY_Controller {
 		$this->_render('pages/home');
 	}
 	
-	public function bandquery($key){
+	public function bandquery(){
 	
 		$this->load->model('Band');
 		
-		$bands = $this->Band->find_band($key);
+		$bands = $this->Band->find_band();
+		$return_array = array();
+	
+		foreach($bands as $band):
+			
+			$row_array['id'] = $band->id;
+			$row_array['value'] = $band->band_name;
+			$row_array['label'] = $band->band_name;
 		
-		echo json_encode($bands);
+			array_push($return_array, $row_array);	
+		endforeach;
+
+		echo json_encode($return_array);
 		
 	}
 	
