@@ -18,7 +18,7 @@ class Venues extends MY_Controller {
 		//if ( ! $venues = $this->session->userdata('venues'))
 		//{
 		     
-		     $service_url = "https://api.foursquare.com/v2/venues/search?ll=".$lat.",".$lon."&categoryId=4bf58dd8d48988d1e5931735&client_id=SW42LYFQ2CPI4R5OFP1R2CVO1DOGDHGK5QV52EOB2O3WRWUO&client_secret=KF4UIOQTZ00R0ZOI4IEV24LFSEBZNUU4DCSHHG1OWIPYFNKD&v=20120627";
+		     $service_url = "https://api.foursquare.com/v2/venues/search?ll=".$lat.",".$lon."&categoryId=5032792091d4c4b30a586d5c,4bf58dd8d48988d1e5931735&client_id=SW42LYFQ2CPI4R5OFP1R2CVO1DOGDHGK5QV52EOB2O3WRWUO&client_secret=KF4UIOQTZ00R0ZOI4IEV24LFSEBZNUU4DCSHHG1OWIPYFNKD&v=20120627";
 		     $curl = curl_init();
 		    // echo $service_url;
 		     curl_setopt($curl,CURLOPT_URL,$service_url);

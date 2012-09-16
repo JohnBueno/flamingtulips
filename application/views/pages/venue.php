@@ -49,11 +49,11 @@
 					     	
 					     	<br><br>
 					     	
-					     	<select id="band_id" name="band_id">
+					     	<!--<select id="band_id" name="band_id">
 					     		<? foreach($bands as $band): ?>
 					     			<option value="<?=$band->id; ?>"><?=$band->band_name; ?></option>
 								<? endforeach; ?>
-					     	</select>
+					     	</select>-->
 				     	</div>
 				    </div>
 				    

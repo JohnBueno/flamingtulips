@@ -13,19 +13,20 @@ $(document).ready(function(){
 			
 		return false;
 	});
-
+	
 	
 	$("#band_name").autocomplete({
         source: _baseUrl+"bands/bandquery/",
         select: function(event, ui) {
-        	console.log(ui.item);
+        	
             //$('#state_id').val(ui.item.id);
             //$('#abbrev').val(ui.item.abbrev);
+        },
+        change: function(event, ui){
+        	//autocomplete = _baseUrl+"bands/bandquery/";
+        	console.log(ui);
         }
     });
-
-	
-	
 	/*
 	$('#band_name').keyup(function(event){
 		var query = $(this).attr('value');
@@ -42,7 +43,4 @@ $(document).ready(function(){
 		}
 	});
 	*/
-	
-	
-	
 });

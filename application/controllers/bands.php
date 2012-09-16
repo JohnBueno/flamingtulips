@@ -7,18 +7,18 @@ class Bands extends MY_Controller {
 		/*
 		 *set up title and keywords (if not the default in custom.php config file will be set) 
 		 */
-		$this->title = "Yaaaaa";
+		$this->title = "The Tulip";
 		
 		$this->keywords = "arny, arnodo";
 		
 		$this->_render('pages/home');
 	}
 	
-	public function bandquery(){
-	
+	public function bandquery($query=null){
+		$query = $this->input->get('term');
 		$this->load->model('Band');
-		
-		$bands = $this->Band->find_band();
+		//log_message('error', "Query: ".$query);
+		$bands = $this->Band->find_band($query);
 		$return_array = array();
 	
 		foreach($bands as $band):

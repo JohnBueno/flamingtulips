@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 	var usrLat = 0;
 	var usrLong = 0;
 	console.log(_baseUrl);

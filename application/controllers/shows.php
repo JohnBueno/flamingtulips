@@ -30,11 +30,17 @@ class Shows extends MY_Controller {
 	public function add_show()
 	{
 		$this->load->model('Show');
-		
+		$this->load->model('Band');
 		// build an array of the data to load into the database from the passed form
+		if( !( $band_id = $this->Band->band_exists($this->input->post('band_name'))) ){
+			log_message('error', 'Band id: '.$band_id);
+			$band['band_name'] = $this->input->post('band_name');
+			$band_id = $this->Band->add_band($band);
+		} 
+		log_message('error', 'Band id: '.$band_id);
 		$insert = array();
 		$insert['date'] = $this->input->post('date');
-		$insert['band_id'] = $this->input->post('band_id');
+		$insert['band_id'] = $band_id;
 		$insert['venue_id'] = $this->input->post('venue_id');
 		
 		// if the add is successful...
