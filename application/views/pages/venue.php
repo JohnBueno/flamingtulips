@@ -15,10 +15,22 @@
 		?>
 		<br><br>
 		<ul>
+			<li>
 		<?  
 			foreach($shows as $show){
-				echo "<li>".date('l, F jS',strtotime($show->date))." | ".$show->band_name."</li>";
-			}?>
+				//echo '<li>'.$show.'</li>';
+				//print_r($show);
+				echo date('l, F jS',strtotime($show->date))." | ".$show->band_id;
+			?>
+			| Rate: 
+			<a href="#" class="rate_show" title="<?=$show->id;?>">1</a> | 
+			<a href="#" class="rate_show" title="<?=$show->id;?>">2</a> | 
+			<a href="#" class="rate_show" title="<?=$show->id;?>">3</a> | 
+			<a href="#" class="rate_show" title="<?=$show->id;?>">4</a> | 
+			<a href="#" class="rate_show" title="<?=$show->id;?>">5</a> 
+			</li>	
+			<? } ?>
+			
 		  </ul>
 			<?
 		} else {

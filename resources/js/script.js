@@ -15,6 +15,19 @@ $(document).ready(function(){
 	});
 	
 	
+	$('.rate_show').click(function(e){
+		var rating = $(this).text();
+		var show_id = $(this).attr('title');
+		$.ajax({
+			type: "POST",
+			url: _baseUrl+"shows/rate_show",
+			data: { rating: rating, show_id: show_id },
+			success: function(d){
+				console.log(d);
+			}
+		});
+	});
+	
 	$("#band_name").autocomplete({
         source: _baseUrl+"bands/bandquery/",
         select: function(event, ui) {

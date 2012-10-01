@@ -15,17 +15,20 @@ class Bands extends MY_Controller {
 	}
 	
 	public function bandquery($query=null){
+		
 		$query = $this->input->get('term');
-		$this->load->model('Band');
-		//log_message('error', "Query: ".$query);
-		$bands = $this->Band->find_band($query);
+		
+		$this->load->model('band_model');
+		
+		$bands = $this->band_model->get_all();
+		
 		$return_array = array();
-	
+			
 		foreach($bands as $band):
 			
 			$row_array['id'] = $band->id;
-			$row_array['value'] = $band->band_name;
-			$row_array['label'] = $band->band_name;
+			$row_array['value'] = $band->name;
+			$row_array['label'] = $band->name;
 		
 			array_push($return_array, $row_array);	
 		endforeach;

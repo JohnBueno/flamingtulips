@@ -11,45 +11,76 @@ class Shows extends MY_Controller {
 		$this->_render('pages/home');
 	}
 	
-	public function by_venue($id) 
+	public function by_venue($id)
 	{
+		$this->load->model('show_model');
+		$this->load->model('band_model');
+		$this->load->model('venue_model');
+		$venue = $this->venue_model->get_by('foursquare_id', $id);
 		
-		$this->load->model('Show');
-		$shows = $this->Show->get_by_venue_id($id);
-		$data['shows'] = $shows;
-		
-		$this->load->model('Band');
-		$bands = $this->Band->get_band_ids();
-		$data['bands'] = $bands;
+		$data['shows'] = $this->show_model->get_many_by('venue_id', $venue->id);
+		$data['bands'] = array();
 		$data['venue_id'] = $id;
-		
-		$this->_render('pages/venue', $data);	
-		
+		$this->_render('pages/venue', $data);
+	}
+	
+	public function rate_show()
+	{
+		$rating = $this->input->post('rating');
+		$show_id = $this->input->post('show_id');
+		$this->load->model('show_review_model');
+		$insert['rating'] = $rating;
+		$insert['show_id'] = $show_id;
+		$this->show_review_model->insert($insert);
+		echo "success";
 	}
 	
 	public function add_show()
 	{
-		$this->load->model('Show');
-		$this->load->model('Band');
-		// build an array of the data to load into the database from the passed form
-		if( !( $band_id = $this->Band->band_exists($this->input->post('band_name'))) ){
-			log_message('error', 'Band id: '.$band_id);
-			$band['band_name'] = $this->input->post('band_name');
-			$band_id = $this->Band->add_band($band);
-		} 
-		log_message('error', 'Band id: '.$band_id);
+		$this->load->model('show_model');
+		$this->load->model('band_model');
+		$this->load->model('venue_model');
+		
+		// check if the band exists
+		$band = $this->band_model->get_by('name', $this->input->post('band_name'));
+		
+		// if not,create it.
+		if(!$band){
+			$this->band_model->insert(array(
+				'name'=>$this->input->post('band_name')
+			));
+			$band = $this->band_model->get_by('name', $this->input->post('band_name'));
+		}
+		
+		// assign id to the existing or newly created band.
+		$band_id = $band->id;
+		
+		// check if the venue exists
+		$venue = $this->venue_model->get_by('foursquare_id', $this->input->post('venue_id'));
+		
+		// if not,create it.
+		if(!$venue){
+			$this->venue_model->insert(array(
+				'foursquare_id'=>$this->input->post('venue_id')
+			));
+			$venue = $this->venue_model->get_by('foursquare_id', $this->input->post('venue_id'));
+		}
+		
+		// assign id to the existing or newly created venue.
+		$venue_id = $venue->id;
+		
 		$insert = array();
 		$insert['date'] = $this->input->post('date');
 		$insert['band_id'] = $band_id;
-		$insert['venue_id'] = $this->input->post('venue_id');
+		$insert['venue_id'] = $venue_id;
 		
 		// if the add is successful...
-		if( $this->Show->add($insert) )
+		if( $this->show_model->insert($insert) )
 		{
 			echo "success";
 		} else {
 			echo "failure";
 		}
 	}
-	
 }
+?>
