@@ -17,8 +17,11 @@ class Shows extends MY_Controller {
 		$this->load->model('band_model');
 		$this->load->model('venue_model');
 		$venue = $this->venue_model->get_by('foursquare_id', $id);
-		
-		$data['shows'] = $this->show_model->get_many_by('venue_id', $venue->id);
+		if($venue){
+			$data['shows'] = $this->show_model->get_many_by('venue_id', $venue->id);
+		} else {
+			$data['shows'] = array();
+		}
 		$data['bands'] = array();
 		$data['venue_id'] = $id;
 		$this->_render('pages/venue', $data);
