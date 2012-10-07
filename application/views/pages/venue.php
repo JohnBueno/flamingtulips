@@ -10,8 +10,8 @@
 			 <i class="icon-star"></i> 
 		<? } ?>
 		
-		<? for ($i = 0; $i < 4-$rating; $i++) { ?>
-			 ☆
+		<? for ($i = 0; $i < 5-$rating; $i++) { ?>
+			 <i class="icon-star-empty"></i>
 		<? } ?>
 	</h4>
 	<br>
@@ -26,6 +26,7 @@
 		
 		<?php
 		if(count($shows) > 0){ 
+		$today = date('m/j');
 		?>
 		<br><br>
 		<table class="table">
@@ -34,12 +35,14 @@
 			<th>Band</th><th>Date</th><th>Your Rating</th><th>Average Rating</th>
 			</tr>
 			</thead>
+			<tbody>
 			<?  
 			foreach($shows as $show){
+			$date = new DateTime($show->date);
 			?>
-			<tr>
+			<tr <? if($date->format('m/j') == $today){ echo "class='success'"; }?>>
 				<td><?=ucwords($show->name);?></td>
-				<td><? $date = new DateTime($show->date); echo $date->format('m/j'); ?></td>
+				<td><?  echo $date->format('m/j'); ?></td>
 				<td class="rating">
 					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="5" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a>
 					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="4" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a>
@@ -58,8 +61,9 @@
 					
 				</td>
 			</tr>	
+		
 			<? } ?>
-			
+			</tbody>	
 		  </table>
 			<?
 		} else {
@@ -98,7 +102,7 @@
 				     	</div>
 				    </div>
 				    
-				    <input type="hidden" value="<?= $venue_id;?>" name="venue_id"/>
+				    <input type="hidden" value="<?= $foursquare;?>" name="venue_id"/>
 				    
 				    <div class="control-group">
 				      	<label class="control-label" for="input01">Date</label>

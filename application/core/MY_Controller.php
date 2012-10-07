@@ -27,7 +27,7 @@ class MY_Controller extends CI_Controller{
 		$this->description = $this->config->item('site_description');
 		$this->keywords = $this->config->item('site_keywords');
 		$this->author = $this->config->item('site_author');
-		$this->output->enable_profiler(TRUE);
+		//$this->output->enable_profiler(TRUE);
 		$this->pageName = strToLower(get_class($this));
 	}
 	 

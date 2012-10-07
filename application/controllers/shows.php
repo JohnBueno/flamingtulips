@@ -24,6 +24,7 @@ class Shows extends MY_Controller {
 		}
 		$data['bands'] = array();
 		$data['venue_id'] = $venue->id;
+		$data['foursquare'] = $venue->foursquare_id;
 		$data['rating'] = $venue->rating;
 		$this->_render('pages/venue', $data);
 	}

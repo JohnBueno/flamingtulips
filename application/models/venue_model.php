@@ -8,11 +8,12 @@ class Venue_model extends MY_Model{
 	 */
 	public function get_by_foursquare($venue_id)
 	{
-	    $this->db->select("venues.id, venues.foursquare_id, show_reviews.rating AS rating
-	    					FROM (venues)
-						    LEFT JOIN (
-						    	SELECT AVG(show_reviews.rating) AS rating, show_reviews.venue_id FROM show_reviews 
-						    ) show_reviews ON show_reviews.venue_id = venues.id
+	    $this->db->select("`venues`.`id`, `venues`.`foursquare_id`,
+						    (	SELECT ROUND(AVG(show_reviews.rating)) AS rating 
+						    	FROM show_reviews 
+						    	WHERE show_reviews.venue_id = venues.id
+						    ) AS rating
+						    FROM (venues)
 						    WHERE foursquare_id =  '$venue_id' LIMIT 1");
 	    $query = $this->db->get();
 	    return $query->row();

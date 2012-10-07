@@ -121,3 +121,6 @@ ERROR - 2012-10-07 22:17:30 --> Severity: Notice  --> Undefined property: stdCla
 ERROR - 2012-10-07 22:17:30 --> Severity: Notice  --> Undefined property: stdClass::$rating /Users/gpotts/Sites/tulip/application/views/pages/venue.php 51
 ERROR - 2012-10-07 22:17:30 --> Severity: Notice  --> Undefined property: stdClass::$rating /Users/gpotts/Sites/tulip/application/views/pages/venue.php 47
 ERROR - 2012-10-07 22:17:30 --> Severity: Notice  --> Undefined property: stdClass::$rating /Users/gpotts/Sites/tulip/application/views/pages/venue.php 51
+ERROR - 2012-10-07 22:48:28 --> Severity: Notice  --> Undefined variable: date /Users/gpotts/Sites/tulip/application/views/pages/venue.php 41
+ERROR - 2012-10-07 22:49:28 --> Severity: Notice  --> Undefined variable: date /Users/gpotts/Sites/tulip/application/views/pages/venue.php 41
+ERROR - 2012-10-07 23:02:16 --> Severity: Notice  --> Undefined property: stdClass::$rating /Users/gpotts/Sites/tulip/application/controllers/shows.php 28
