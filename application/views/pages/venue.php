@@ -4,34 +4,63 @@
 
 <div class="row">
 	<div class="span12">
+	<h4>
+	Venue Average: 
+		<? for ($i = 0; $i < $rating; $i++) { ?>
+			 <i class="icon-star"></i> 
+		<? } ?>
+		
+		<? for ($i = 0; $i < 4-$rating; $i++) { ?>
+			 ☆
+		<? } ?>
+	</h4>
+	<br>
+	
 	
 	<h3>Shows at This Venue</h3>
 	<br> 
-	 <a data-toggle="modal" href="#myModal" class="btn btn-primary">Add Show</a>
+	
+	
+	 <button data-toggle="modal" href="#myModal" class="btn btn-large btn-block btn-primary">Add Show</button>
 	
 		
 		<?php
 		if(count($shows) > 0){ 
 		?>
 		<br><br>
-		<ul>
-			<li>
-		<?  
+		<table class="table">
+			<thead>
+			<tr>
+			<th>Band</th><th>Date</th><th>Your Rating</th><th>Average Rating</th>
+			</tr>
+			</thead>
+			<?  
 			foreach($shows as $show){
-				//echo '<li>'.$show.'</li>';
-				//print_r($show);
-				echo date('l, F jS',strtotime($show->date))." | ".$show->band_id;
 			?>
-			| Rate: 
-			<a href="#" class="rate_show" title="<?=$show->id;?>">1</a> | 
-			<a href="#" class="rate_show" title="<?=$show->id;?>">2</a> | 
-			<a href="#" class="rate_show" title="<?=$show->id;?>">3</a> | 
-			<a href="#" class="rate_show" title="<?=$show->id;?>">4</a> | 
-			<a href="#" class="rate_show" title="<?=$show->id;?>">5</a> 
-			</li>	
+			<tr>
+				<td><?=ucwords($show->name);?></td>
+				<td><? $date = new DateTime($show->date); echo $date->format('m/j'); ?></td>
+				<td class="rating">
+					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="5" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a>
+					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="4" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a>
+					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="3" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a>
+					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="2" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a>
+					<a href="#" class="rate_show" data-id="<?=$show->show_id;?>" data-rating="1" data-band_id="<?=$show->band_id;?>" data-venue_id="<?=$venue_id?>">☆</a> 
+				</td>
+				<td>Average:
+					<? for ($i = 0; $i < $show->rating; $i++) { ?>
+						<i class="icon-star"></i>
+					<? } ?>
+					
+					<? for ($i = 0; $i < 5 - $show->rating; $i++) { ?>
+						☆
+					<? } ?>
+					
+				</td>
+			</tr>	
 			<? } ?>
 			
-		  </ul>
+		  </table>
 			<?
 		} else {
 			?>

@@ -14,7 +14,7 @@ $(document).ready(function(){
 				for(var i = 0; i < data.response.venues.length; i++){
 					var venue = data.response.venues[i];
 					//console.log(venue);
-					$('#venue_table tr:last').after('<tr><td><a href=shows/by_venue/'+venue.id+' >'+venue.name+'</a></td></tr>');
+					$('#venue_table tr:last').after('<tr><td><a href=shows/by_venue/'+venue.id+' >'+venue.name+' ' + venue.location.lat + ' ' + venue.location.lng + '</a></td></tr>');
 				}
 			},
 			error: function(data){

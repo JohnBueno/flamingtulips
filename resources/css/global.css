@@ -4,3 +4,38 @@
 body{
 	padding-top:40px;
 }
+
+/*
+	Ratings Stars
+	(with as little code as possible)
+*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > a {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  color:  black;
+}
+.rating > a:hover,
+.rating > a:hover ~ a {
+  color: transparent;
+}
+.rating > a:hover:before,
+.rating > a:hover ~ a:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}
+
+
+
+@media (max-width: 979px) {
+body{
+	padding-top: 0;
+	}
+}

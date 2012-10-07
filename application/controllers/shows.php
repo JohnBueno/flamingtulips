@@ -16,14 +16,15 @@ class Shows extends MY_Controller {
 		$this->load->model('show_model');
 		$this->load->model('band_model');
 		$this->load->model('venue_model');
-		$venue = $this->venue_model->get_by('foursquare_id', $id);
+		$venue = $this->venue_model->get_by_foursquare($id);
 		if($venue){
-			$data['shows'] = $this->show_model->get_many_by('venue_id', $venue->id);
+			$data['shows'] = $this->show_model->get_for_venue($venue->id);
 		} else {
 			$data['shows'] = array();
 		}
 		$data['bands'] = array();
-		$data['venue_id'] = $id;
+		$data['venue_id'] = $venue->id;
+		$data['rating'] = $venue->rating;
 		$this->_render('pages/venue', $data);
 	}
 	
@@ -31,9 +32,13 @@ class Shows extends MY_Controller {
 	{
 		$rating = $this->input->post('rating');
 		$show_id = $this->input->post('show_id');
+		$band_id = $this->input->post('band_id');
+		$venue_id = $this->input->post('venue_id');
 		$this->load->model('show_review_model');
 		$insert['rating'] = $rating;
 		$insert['show_id'] = $show_id;
+		$insert['band_id'] = $band_id;
+		$insert['venue_id'] = $venue_id;
 		$this->show_review_model->insert($insert);
 		echo "success";
 	}
