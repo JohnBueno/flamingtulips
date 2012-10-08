@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var usrLat = 0;
 	var usrLong = 0;
-	console.log(_baseUrl);
+	//console.log(_baseUrl);
 	function getLocalVenues(lat, lon){
 		$.ajax({
 			url: _baseUrl+"venues/get_local/",
@@ -9,7 +9,7 @@ $(document).ready(function(){
 			type: 'POST',
 			dataType:'JSON',
 			success: function(data){
-			console.log(data);
+			//console.log(data);
 				var data = jQuery.parseJSON(data);
 				for(var i = 0; i < data.response.venues.length; i++){
 					var venue = data.response.venues[i];
@@ -29,6 +29,17 @@ $(document).ready(function(){
 		 usrLat = (usrLat).toFixed(2);
 		 usrLong = (usrLong).toFixed(2);
 		 getLocalVenues(usrLat, usrLong);
+		 	
+		$.ajax({
+			type: "POST",
+			data: "lat=" + usrLat + "&long=" + usrLong,
+			url: _baseUrl+"home/setMapCenter/",
+			cache: false,
+			success: function(html){
+				alert("success");	
+			}
+		});
+		 
 		 //printLatLong(position.coords.latitude, position.coords.longitude);
 	}
 	 

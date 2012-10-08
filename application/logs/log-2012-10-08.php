@@ -19,3 +19,6 @@ ERROR - 2012-10-08 00:05:01 --> Severity: Notice  --> Undefined variable: map /U
 ERROR - 2012-10-08 00:14:43 --> Severity: Notice  --> Undefined variable: center /Users/jmm6026/Sites/tulip/application/controllers/home.php 19
 ERROR - 2012-10-08 00:15:48 --> Severity: Notice  --> Undefined variable: center /Users/jmm6026/Sites/tulip/application/controllers/home.php 19
 ERROR - 2012-10-08 00:44:40 --> Severity: Notice  --> Undefined variable: data /Users/jmm6026/Sites/tulip/application/controllers/home.php 33
+ERROR - 2012-10-08 04:02:13 --> 404 Page Not Found --> setMapCenter
+ERROR - 2012-10-08 04:02:30 --> 404 Page Not Found --> setMapCenter
+ERROR - 2012-10-08 04:04:29 --> 404 Page Not Found --> setMapCenter

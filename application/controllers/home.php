@@ -19,10 +19,6 @@ class Home extends MY_Controller {
 			
 		);
 		
-		$marker = array();
-		$marker['position'] = '1201 Frankford Avenue, Philadelphia, PA 19125'; 		
-		$marker['title'] = 'A marker title';
-		
 		// Initialize our map. Here you can also pass in additional 
 		//parameters for customising the map (see below)
 		$this->googlemaps->initialize($congfig);
@@ -32,10 +28,13 @@ class Home extends MY_Controller {
 		// placed where we want the map to appear.
 		
 		$data['map'] = $this->googlemaps->create_map();
-		//print_r($this->googlemaps->create_map());
 		
 		// Load our view, passing the map data that has just been created
 		$this->_render('pages/home', $data);
+	}
+	
+	public function setMapCenter(){
+	
 	}
 	
 }
