@@ -124,3 +124,9 @@ ERROR - 2012-10-07 22:17:30 --> Severity: Notice  --> Undefined property: stdCla
 ERROR - 2012-10-07 22:48:28 --> Severity: Notice  --> Undefined variable: date /Users/gpotts/Sites/tulip/application/views/pages/venue.php 41
 ERROR - 2012-10-07 22:49:28 --> Severity: Notice  --> Undefined variable: date /Users/gpotts/Sites/tulip/application/views/pages/venue.php 41
 ERROR - 2012-10-07 23:02:16 --> Severity: Notice  --> Undefined property: stdClass::$rating /Users/gpotts/Sites/tulip/application/controllers/shows.php 28
+ERROR - 2012-10-07 23:51:30 --> Severity: Notice  --> Undefined variable: map /Users/jmm6026/Sites/tulip/application/views/template/skeleton.php 35
+ERROR - 2012-10-07 23:51:45 --> Severity: Notice  --> Undefined variable: map /Users/jmm6026/Sites/tulip/application/views/template/skeleton.php 35
+ERROR - 2012-10-07 23:52:52 --> Severity: Notice  --> Undefined variable: map /Users/jmm6026/Sites/tulip/application/views/pages/home.php 16
+ERROR - 2012-10-07 23:52:52 --> Severity: Notice  --> Undefined variable: map /Users/jmm6026/Sites/tulip/application/views/template/skeleton.php 35
+ERROR - 2012-10-07 23:58:08 --> Severity: Notice  --> Undefined variable: map /Users/jmm6026/Sites/tulip/application/views/pages/home.php 16
+ERROR - 2012-10-07 23:58:08 --> Severity: Notice  --> Undefined variable: map /Users/jmm6026/Sites/tulip/application/views/template/skeleton.php 35

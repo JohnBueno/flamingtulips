@@ -32,6 +32,9 @@
 <?php endforeach;?>
 <script src="<?php echo base_url(JS."libs/modernizr-2.5.3.min.js");?>"></script>
 
+<!-- Load Google Maps API -->
+<?php echo $map['js']; ?>
+
 <!-- Le fav and touch icons -->
 <link rel="shortcut icon" href="<?php echo base_url(IMAGES.'ico/favicon.ico');?>">
 <link rel="apple-touch-icon" href="<?php echo base_url(IMAGES.'ico/apple-touch-icon-precompresse.png');?>">
