@@ -36,7 +36,7 @@ $(document).ready(function(){
 			url: _baseUrl+"home/setMapCenter/",
 			cache: false,
 			success: function(html){
-				alert("success");	
+				//alert("success");	
 			}
 		});
 		 

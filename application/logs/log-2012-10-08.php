@@ -22,3 +22,4 @@ ERROR - 2012-10-08 00:44:40 --> Severity: Notice  --> Undefined variable: data /
 ERROR - 2012-10-08 04:02:13 --> 404 Page Not Found --> setMapCenter
 ERROR - 2012-10-08 04:02:30 --> 404 Page Not Found --> setMapCenter
 ERROR - 2012-10-08 04:04:29 --> 404 Page Not Found --> setMapCenter
+ERROR - 2012-10-08 04:17:29 --> Severity: Notice  --> Undefined property: Home::$googlemaps /Users/jmm6026/Sites/tulip/application/controllers/home.php 49

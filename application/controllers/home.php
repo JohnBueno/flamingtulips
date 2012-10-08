@@ -14,6 +14,8 @@ class Home extends MY_Controller {
 		// Load the library
 		$this->load->library('googlemaps');
 		
+		
+		
 		$congfig = array(
 			'center' => '39.969002 -75.134188',
 			
@@ -22,6 +24,19 @@ class Home extends MY_Controller {
 		// Initialize our map. Here you can also pass in additional 
 		//parameters for customising the map (see below)
 		$this->googlemaps->initialize($congfig);
+		
+		// Set the marker parameters as an empty array. Especially important 
+		//if we are using multiple markers 
+		$marker = array();
+		
+		// Specify an address or lat/long for where the marker should appear. 
+		$marker['position'] = '39.954803254592406 -75.13889908790588';
+
+		// Once all the marker parameters have been specified lets add the marker to our map 
+		$this->googlemaps->add_marker($marker);
+		
+		
+		
 		
 		// Create the map. This will return the Javascript to be included in 
 		//our pages <head></head> section and the HTML code to be 
@@ -35,6 +50,9 @@ class Home extends MY_Controller {
 	
 	public function setMapCenter(){
 	
+		$mapCenterLat = $this->input->post('lat');
+		$mapCenterLong = $this->input->post('long');
+		
 	}
 	
 }
