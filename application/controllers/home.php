@@ -27,13 +27,13 @@ class Home extends MY_Controller {
 		
 		// Set the marker parameters as an empty array. Especially important 
 		//if we are using multiple markers 
-		$marker = array();
+		//$marker = array();
 		
 		// Specify an address or lat/long for where the marker should appear. 
-		$marker['position'] = '39.954803254592406 -75.13889908790588';
+		//$marker['position'] = '39.954803254592406 -75.13889908790588';
 
 		// Once all the marker parameters have been specified lets add the marker to our map 
-		$this->googlemaps->add_marker($marker);
+		//$this->googlemaps->add_marker($marker);
 		
 		
 		

@@ -1927,7 +1927,7 @@ class Googlemaps {
 			';
 		}else{
 			$this->output_js_contents .= '
-		  	window.onload = initialize;
+		  	//window.onload = initialize;
 			';
 		}
 		

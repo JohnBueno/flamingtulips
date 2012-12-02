@@ -33,7 +33,10 @@
 <script src="<?php echo base_url(JS."libs/modernizr-2.5.3.min.js");?>"></script>
 
 <!-- Load Google Maps API -->
-<?php echo $map['js']; ?>
+<?php 
+if(isset($map)){
+	echo $map['js'];
+} ?>
 
 <!-- Le fav and touch icons -->
 <link rel="shortcut icon" href="<?php echo base_url(IMAGES.'ico/favicon.ico');?>">
@@ -52,7 +55,6 @@
 	<script src="<?php echo base_url(JS."libs/jquery-ui-1.8.22.custom.min.js");?>"></script>
 	<script src="<?php echo base_url(JS."libs/underscore-1.3.1.min.js");?>"></script>
 	<script src="<?php echo base_url(JS."plugins.js");?>"></script>
-	<script src="<?php echo base_url(JS."script.js");?>"></script>
 	
 	<!-- extra js-->
 	<?php foreach($javascript as $js):?>
@@ -66,5 +68,10 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
+  
+  <script src="<?php echo base_url(JS."script.js");?>"></script>
+  <!--<script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCy0Pq04G8xihOGbKp5TfE7l5WmU8hVtos&sensor=true">
+      </script>-->
 </body>
 </html>

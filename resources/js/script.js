@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$('#addshow').submit(function(e){
 		e.preventDefault();
 			var request = $(this).serialize();
@@ -42,5 +43,8 @@ $(document).ready(function(){
         	//console.log(ui);
         }
     });
+    
+       
+
 	
 });

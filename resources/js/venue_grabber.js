@@ -2,7 +2,10 @@ $(document).ready(function(){
 	var usrLat = 0;
 	var usrLong = 0;
 	//console.log(_baseUrl);
+	initialize();
 	function getLocalVenues(lat, lon){
+		var newLatLng = new google.maps.LatLng(lat,lon);
+		map.setCenter(newLatLng);
 		$.ajax({
 			url: _baseUrl+"venues/get_local/",
 			data: {'lat':lat, 'lon':lon},
@@ -15,6 +18,13 @@ $(document).ready(function(){
 					var venue = data.response.venues[i];
 					//console.log(venue);
 					$('#venue_table tr:last').after('<tr><td><a href=shows/by_venue/'+venue.id+' >'+venue.name+' ' + venue.location.lat + ' ' + venue.location.lng + '</a></td></tr>');
+					
+					var myLatlng = new google.maps.LatLng(venue.location.lat, venue.location.lng);
+					var marker = new google.maps.Marker({
+					      position: myLatlng,
+					      map: map,
+					      title:venue.name
+					  });
 				}
 			},
 			error: function(data){
@@ -29,7 +39,12 @@ $(document).ready(function(){
 		 usrLat = (usrLat).toFixed(2);
 		 usrLong = (usrLong).toFixed(2);
 		 getLocalVenues(usrLat, usrLong);
-		 	
+		 var myLatlng = new google.maps.LatLng(usrLat,usrLong);
+		 var marker = new google.maps.Marker({
+		       position: myLatlng,
+		       map: map,
+		       title:"Your Location"
+		   });
 		$.ajax({
 			type: "POST",
 			data: "lat=" + usrLat + "&long=" + usrLong,
