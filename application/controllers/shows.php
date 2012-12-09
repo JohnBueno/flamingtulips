@@ -21,6 +21,9 @@ class Shows extends MY_Controller {
 			$data['shows'] = $this->show_model->get_for_venue($venue->id);
 		} else {
 			$data['shows'] = array();
+			$insert['foursquare_id'] = $id;
+			$this->venue_model->insert($insert);
+			$venue = $this->venue_model->get_by_foursquare($id);
 		}
 		$data['bands'] = array();
 		$data['venue_id'] = $venue->id;
