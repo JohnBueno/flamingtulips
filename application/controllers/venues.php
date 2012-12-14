@@ -28,14 +28,41 @@ class Venues extends MY_Controller {
 		     
 		     curl_close($curl);
 		     
-		     $venues = json_encode($curl_response);
+		     //$venues = json_encode($curl_response);
+		     $venues = json_decode($curl_response);
+		     $this->load->model('show_model');
+		     $this->load->model('venue_model');
+		     
+		     // loop response venue array
+		     foreach($venues->response->venues as $venue){
+		     	// get foursquare id for venue
+		     	$id = $venue->id;
+		     	
+		     	// set the venue shows to empty array in case this venue is not in our system
+		     	$venue->shows = array();
+		     	
+		     	// get our venue entry from the database
+		     	$v = $this->venue_model->get_by_foursquare($id);
+		     	
+		     	// if it exists, get the shows for it 
+		     	if($v){
+			     	$shows = $this->show_model->get_for_venue($v->id);
+			     	if(count($shows) > 0){
+			     	
+			   			$venue->shows = $shows;
+			     		
+			     	} 
+		     	}
+		     }
+		  	
+		     
 		     //$this->session->set_userdata('venues', $venues);
 			//$venues = 'test';
 		     // Save into the cache for 5 minutes
 		     //$this->cache->file->save('venues', $venues, 300);
 		//}
-		
-		echo $venues;
+		//print_r($venues);
+		echo json_encode($venues);
 		
 	}
 	

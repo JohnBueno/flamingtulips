@@ -15,8 +15,7 @@
 <meta name="author" content="<?php echo $author ?>" />
 <meta name="description" content="<?php echo $description ?>" />
 
-<link rel="stylesheet" href="<?php echo base_url(CSS."style.css");?>">
-<link rel="stylesheet" href="<?php echo base_url(CSS."global.css");?>">
+<link rel="stylesheet" href="<?php echo base_url(CSS."bootstrap.min.css");?>">
 <link rel="stylesheet" href="<?php echo base_url(CSS."jquery-ui-1.8.22.custom.css");?>">
 <link rel="stylesheet" href="<?php echo base_url(CSS."override.css");?>">
 

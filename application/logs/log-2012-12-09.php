@@ -11,3 +11,4 @@ ERROR - 2012-12-09 22:12:52 --> Severity: Notice  --> Undefined variable: foursq
 ERROR - 2012-12-09 22:16:06 --> Severity: Notice  --> Trying to get property of non-object /Users/gpotts/Sites/tulip/application/controllers/shows.php 28
 ERROR - 2012-12-09 22:16:06 --> Severity: Notice  --> Trying to get property of non-object /Users/gpotts/Sites/tulip/application/controllers/shows.php 29
 ERROR - 2012-12-09 22:16:06 --> Severity: Notice  --> Trying to get property of non-object /Users/gpotts/Sites/tulip/application/controllers/shows.php 30
+
