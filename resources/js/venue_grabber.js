@@ -7,12 +7,13 @@ function addMarkers(venue, index){
 	//Add venue to table list
 	$('#venue_table tr:last').after('<tr><td><a data-id="'+ index +'" href=shows/by_venue/'+venue.id+' >'+venue.name+'</a></td></tr>');
 	
+	console.log(venue);
 	//Set icon to blue for venue has shows and red for no shows
 	var hasShowMarker = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
 	var noShowMarker = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
 	
 	var marker = noShowMarker;
-	if(venue.shows.length > 0){
+	if(venue.future_shows.length > 0){
 		marker = hasShowMarker;
 	}
 	
@@ -44,7 +45,7 @@ function addInfoWindow(theMarker, i, data){
 		var markerIndex = data.response.venues[index]
 		
 		//If venue has shows then show predicted rating for upcomming shows
-		if(markerIndex.shows.length >0){
+		if(markerIndex.future_shows.length >0){
 			$('#venue-rating').show();
 			$('#band-rating').show();
 			$('#shows').html('Next Show: ' + markerIndex.shows[0].name);
