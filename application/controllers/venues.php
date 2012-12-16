@@ -40,6 +40,7 @@ class Venues extends MY_Controller {
 		     	
 		     	// set the venue shows to empty array in case this venue is not in our system
 		     	$venue->shows = array();
+		     	$venue->future_shows = array();
 		     	
 		     	// get our venue entry from the database
 		     	$v = $this->venue_model->get_by_foursquare($id);
@@ -50,7 +51,7 @@ class Venues extends MY_Controller {
 			     	if(count($shows) > 0){
 			     	
 			   			$venue->shows = $shows;
-			     		
+			     		$venue->future_shows = $shows;
 			     	} 
 		     	}
 		     }

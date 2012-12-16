@@ -1,9 +1,11 @@
-function addMarkers(venue){
+var gmarkers = []; 
+
+function addMarkers(venue, index){
 	//create venue object
 	//var venue = data.response.venues[i];
 	
-	//Add venue to table list with lat and long
-	$('#venue_table tr:last').after('<tr><td><a href=shows/by_venue/'+venue.id+' >'+venue.name+'</a></td></tr>');
+	//Add venue to table list
+	$('#venue_table tr:last').after('<tr><td><a data-id="'+ index +'" href=shows/by_venue/'+venue.id+' >'+venue.name+'</a></td></tr>');
 	
 	//Set icon to blue for venue has shows and red for no shows
 	var hasShowMarker = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
@@ -24,12 +26,16 @@ function addMarkers(venue){
 	      map: map,
 	      title:venue.name  
 	});
-
+	
+	gmarkers.push(marker);
+	
+	
 	return marker;
 }
 
-function addInfoWindow(theMarker, i, data){
 
+function addInfoWindow(theMarker, i, data){
+	
 	google.maps.event.addListener(theMarker, 'click', (function(event, index) {
 		return function(){
 		infowindow.close();
@@ -37,11 +43,7 @@ function addInfoWindow(theMarker, i, data){
 		var content;
 		var markerIndex = data.response.venues[index]
 		
-		
-		//for(var i = 0; i < showRating; i++){
-		//	$('.band-star-'+i).removeClass('icon-star-empty').addClass('icon-star');;
-		//}
-		
+		//If venue has shows then show predicted rating for upcomming shows
 		if(markerIndex.shows.length >0){
 			$('#venue-rating').show();
 			$('#band-rating').show();
@@ -52,6 +54,7 @@ function addInfoWindow(theMarker, i, data){
 				$('.band-star-'+i).removeClass('icon-star-empty').addClass('icon-star');;
 			}
 		}else{
+		//hide rating system
 			$('#venue-rating').hide();
 			$('#band-rating').hide();
 			
@@ -90,7 +93,7 @@ function getLocalVenues(lat, lon){
 			
 			for(var i = 0; i < data.response.venues.length; i++){
 			
-				var marker = addMarkers(data.response.venues[i]);
+				var marker = addMarkers(data.response.venues[i], i);
 				
 				addInfoWindow(marker, i, data);  
 			
@@ -174,17 +177,32 @@ function error(msg) {
     alert(msg);
 }
 
+function venueHover(i) {	
+  google.maps.event.trigger(gmarkers[i], "click");
+}
+
 $(document).ready(function(){
 	var usrLat = 0;
 	var usrLong = 0;
+	//create an empty reference array for Markers
 	
 	//initialize all google maps and create map object.
 	initialize();
 	
-	
-	 
-	
-	
+	//Show Venue info window on hover
+	$("#venue_table a").live({
+			mouseenter:
+				function()
+				{
+					venueHover($(this).attr('data-id'));
+				},
+				mouseleave:
+				function()
+				{
+					infowindow.close();
+				}
+		});
+		
 	// test for presence of geolocation
 	if (navigator && navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(geo_success, geo_error);
